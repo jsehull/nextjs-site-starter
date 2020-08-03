@@ -3,6 +3,8 @@
 - Next.js v9.4 (fast reloads + SSG compatible)
 - Created to speed up personal project creation
 
+<img src='public/images/github-preview.png' alt='website preview'>
+
 ## Included
 
 - responsive defaults
