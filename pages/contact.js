@@ -1,18 +1,13 @@
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Layout from '../components/Layout'
 import Section from '../components/Section'
 
 const contact = () => {
   return (
-    <>
-      <Header />
-
+    <Layout pageTitle='Contact'>
       <Section bg='lavender'>
         <h1>Contact</h1>
       </Section>
-
-      <Footer />
-    </>
+    </Layout>
   )
 }
 

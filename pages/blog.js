@@ -1,18 +1,13 @@
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Layout from '../components/Layout'
 import Section from '../components/Section'
 
 const blog = () => {
   return (
-    <>
-      <Header />
-
+    <Layout pageTitle='Blog'>
       <Section bg='lavender'>
         <h1>Blog</h1>
       </Section>
-
-      <Footer />
-    </>
+    </Layout>
   )
 }
 

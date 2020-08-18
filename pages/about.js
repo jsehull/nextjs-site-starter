@@ -1,18 +1,13 @@
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Layout from '../components/Layout'
 import Section from '../components/Section'
 
 const about = () => {
   return (
-    <>
-      <Header />
-
+    <Layout pageTitle='About'>
       <Section bg='lavender'>
         <h1>About</h1>
       </Section>
-
-      <Footer />
-    </>
+    </Layout>
   )
 }
 
