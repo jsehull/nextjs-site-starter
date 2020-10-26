@@ -5,6 +5,14 @@ const StyledHeader = styled.header`
   margin: 0 auto;
   width: 100%;
   background: coral;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `
 
 const FlexContainer = styled.div`
@@ -43,7 +51,7 @@ const NavBar = styled.ul`
   list-style: none;
 `
 
-const Li = styled.li`
+const NavLink = styled.a`
   margin: 5px;
   font-size: 0.9em;
 
@@ -53,39 +61,17 @@ const Li = styled.li`
   }
 `
 
-const A = styled.a`
-  &:hover {
-    text-decoration: underline;
-  }
-`
-
 const Header = () => (
   <StyledHeader>
     <FlexContainer>
       <Link href='/'>
-        <NavLogo>Site Name/Logo</NavLogo>
+        <NavLogo href='/'>Site Name/Logo</NavLogo>
       </Link>
       <NavBar>
-        <Li>
-          <Link href='/about'>
-            <A>About</A>
-          </Link>
-        </Li>
-        <Li>
-          <Link href='/work'>
-            <A>Work</A>
-          </Link>
-        </Li>
-        <Li>
-          <Link href='/blog'>
-            <A>Blog</A>
-          </Link>
-        </Li>
-        <Li>
-          <Link href='/contact'>
-            <A>Contact</A>
-          </Link>
-        </Li>
+        <NavLink href='/about'>About</NavLink>
+        <NavLink href='/work'>Work</NavLink>
+        <NavLink href='/blog'>Blog</NavLink>
+        <NavLink href='/contact'>Contact</NavLink>
       </NavBar>
     </FlexContainer>
   </StyledHeader>
